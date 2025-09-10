@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasoi Ghar - Authentic Indian Cuisine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f3f0;
+        }
+        /* Custom colors for a nude brown/pastel theme */
+        :root {
+            --primary-color: #7c4b3f; /* Dark Brown */
+            --secondary-color: #a0522d; /* Sienna Brown */
+            --accent-color: #d2b48c; /* Tan/Nude */
+            --light-color: #f5f5dc; /* Beige */
+            --text-color: #4b3832; /* Rich Dark Brown */
+        }
+        .bg-primary { background-color: var(--primary-color); }
+        .text-primary { color: var(--primary-color); }
+        .bg-secondary { background-color: var(--secondary-color); }
+        .text-secondary { color: var(--secondary-color); }
+        .bg-accent { background-color: var(--accent-color); }
+        .text-accent { color: var(--accent-color); }
+        .bg-light { background-color: var(--light-color); }
+        .text-light { color: var(--light-color); }
+        .text-text { color: var(--text-color); }
+
+        /* Custom hero background with a placeholder image representing the theme */
+        .bg-hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://placehold.co/1920x1080/d2b48c/4b3832?text=Rasoi+Ghar');
+            background-size: cover;
+            background-position: center;
+        }
+        .menu-grid-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 0;
+            border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+        }
+        .menu-grid-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="text-text">
+
+    <!-- Header & Navigation -->
+    <header class="bg-light shadow-lg fixed top-0 w-full z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-3xl font-bold text-primary">Rasoi Ghar <span class="text-secondary text-2xl">🪔</span></a>
+            <div class="space-x-4 md:space-x-6">
+                <a href="#menu" class="text-text hover:text-secondary transition-colors duration-300">Menu</a>
+                <a href="#special" class="text-text hover:text-secondary transition-colors duration-300">Specials</a>
+                <a href="#game" class="text-text hover:text-secondary transition-colors duration-300">Game</a>
+                <a href="#contact" class="text-text hover:text-secondary transition-colors duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section id="hero" class="bg-hero min-h-screen flex items-center justify-center text-center text-light pt-20">
+            <div class="px-4">
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-4 leading-tight drop-shadow-lg">
+                    Welcome to Rasoi Ghar
+                </h1>
+                <p class="text-xl md:text-2xl font-light max-w-3xl mx-auto mb-8">
+                    Experience authentic, traditional Indian food made with a touch of home.
+                </p>
+                <a href="#menu" class="bg-secondary hover:bg-primary text-light font-semibold py-3 px-8 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105">
+                    Explore Our Menu
+                </a>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="py-16 md:py-24 bg-light">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-primary">Traditional Menu</h2>
+                
+                <!-- Starters -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-semibold mb-6 text-secondary text-center">🥗 Starters</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-md">
+                            <h4 class="text-xl font-bold mb-4">Veg</h4>
+                            <div class="space-y-2">
+                                <div class="menu-grid-item"><span>Paneer Tikka</span><span class="font-semibold text-primary">₹320</span></div>
+                                <div class="menu-grid-item"><span>Veg Hara Bhara Kabab</span><span class="font-semibold text-primary">₹290</span></div>
+                                <div class="menu-grid-item"><span>Dahi Ke Kebab</span><span class="font-semibold text-primary">₹300</span></div>
+                                <div class="menu-grid-item"><span>Veg Spring Roll</span><span class="font-semibold text-primary">₹280</span></div>
+                                <div class="menu-grid-item"><span>Aloo Tikki Chaat</span><span class="font-semibold text-primary">₹250</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-md">
+                            <h4 class="text-xl font-bold mb-4">Non-Veg</h4>
+                            <div class="space-y-2">
+                                <div class="menu-grid-item"><span>Chicken Tandoori</span><span class="font-semibold text-primary">₹380</span></div>
+                                <div class="menu-grid-item"><span>Mutton Seekh Kebab</span><span class="font-semibold text-primary">₹450</span></div>
+                                <div class="menu-grid-item"><span>Fish Amritsari</span><span class="font-semibold text-primary">₹420</span></div>
+                                <div class="menu-grid-item"><span>Chicken Malai Tikka</span><span class="font-semibold text-primary">₹390</span></div>
+                                <div class="menu-grid-item"><span>Prawn Koliwada</span><span class="font-semibold text-primary">₹550</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Course -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-semibold mb-6 text-secondary text-center">🍛 Main Course</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="bg-white p-6 rounded-2xl shadow-md">
+                            <h4 class="text-xl font-bold mb-4">Veg</h4>
+                            <div class="space-y-2">
+                                <div class="menu-grid-item"><span>Paneer Butter Masala</span><span class="font-semibold text-primary">₹350</span></div>
+                                <div class="menu-grid-item"><span>Dal Tadka / Dal Makhani</span><span class="font-semibold text-primary">₹280</span></div>
+                                <div class="menu-grid-item"><span>Veg Kolhapuri</span><span class="font-semibold text-primary">₹310</span></div>
+                                <div class="menu-grid-item"><span>Chole Masala</span><span class="font-semibold text-primary">₹290</span></div>
+                                <div class="menu-grid-item"><span>Mix Veg Curry</span><span class="font-semibold text-primary">₹270</span></div>
+                            </div>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl shadow-md">
+                            <h4 class="text-xl font-bold mb-4">Non-Veg</h4>
+                            <div class="space-y-2">
+                                <div class="menu-grid-item"><span>Butter Chicken</span><span class="font-semibold text-primary">₹480</span></div>
+                                <div class="menu-grid-item"><span>Mutton Rogan Josh</span><span class="font-semibold text-primary">₹550</span></div>
+                                <div class="menu-grid-item"><span>Chicken Curry (Desi Style)</span><span class="font-semibold text-primary">₹450</span></div>
+                                <div class="menu-grid-item"><span>Fish Curry (Coastal Style)</span><span class="font-semibold text-primary">₹520</span></div>
+                                <div class="menu-grid-item"><span>Egg Masala Curry</span><span class="font-semibold text-primary">₹320</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Breads, Rice, Beverages, Desserts -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-bold mb-4">🍞 Indian Breads</h4>
+                        <div class="space-y-2">
+                            <div class="menu-grid-item"><span>Tandoori Roti</span><span class="font-semibold text-primary">₹50</span></div>
+                            <div class="menu-grid-item"><span>Butter Naan</span><span class="font-semibold text-primary">₹60</span></div>
+                            <div class="menu-grid-item"><span>Garlic Naan</span><span class="font-semibold text-primary">₹70</span></div>
+                            <div class="menu-grid-item"><span>Laccha Paratha</span><span class="font-semibold text-primary">₹75</span></div>
+                            <div class="menu-grid-item"><span>Missi Roti</span><span class="font-semibold text-primary">₹65</span></div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-bold mb-4">🍚 Rice & Biryani</h4>
+                        <div class="space-y-2">
+                            <div class="menu-grid-item"><span>Veg Pulao</span><span class="font-semibold text-primary">₹250</span></div>
+                            <div class="menu-grid-item"><span>Veg Biryani</span><span class="font-semibold text-primary">₹320</span></div>
+                            <div class="menu-grid-item"><span>Jeera Rice</span><span class="font-semibold text-primary">₹180</span></div>
+                            <div class="menu-grid-item"><span>Chicken Biryani</span><span class="font-semibold text-primary">₹420</span></div>
+                            <div class="menu-grid-item"><span>Mutton Biryani</span><span class="font-semibold text-primary">₹500</span></div>
+                            <div class="menu-grid-item"><span>Prawn Biryani</span><span class="font-semibold text-primary">₹580</span></div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-bold mb-4">🥤 Beverages</h4>
+                        <div class="space-y-2">
+                            <div class="menu-grid-item"><span>Lassi (Sweet/Salted)</span><span class="font-semibold text-primary">₹120</span></div>
+                            <div class="menu-grid-item"><span>Masala Chaas</span><span class="font-semibold text-primary">₹100</span></div>
+                            <div class="menu-grid-item"><span>Fresh Lime Soda</span><span class="font-semibold text-primary">₹90</span></div>
+                            <div class="menu-grid-item"><span>Buttermilk</span><span class="font-semibold text-primary">₹80</span></div>
+                            <div class="menu-grid-item"><span>Soft Drinks</span><span class="font-semibold text-primary">₹60</span></div>
+                        </div>
+                    </div>
+                    <div class="bg-white p-6 rounded-2xl shadow-md">
+                        <h4 class="text-xl font-bold mb-4">🍮 Desserts</h4>
+                        <div class="space-y-2">
+                            <div class="menu-grid-item"><span>Gulab Jamun</span><span class="font-semibold text-primary">₹150</span></div>
+                            <div class="menu-grid-item"><span>Rasmalai</span><span class="font-semibold text-primary">₹180</span></div>
+                            <div class="menu-grid-item"><span>Kheer</span><span class="font-semibold text-primary">₹160</span></div>
+                            <div class="menu-grid-item"><span>Jalebi with Rabdi</span><span class="font-semibold text-primary">₹200</span></div>
+                            <div class="menu-grid-item"><span>Ice Cream</span><span class="font-semibold text-primary">₹120</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Special Friends' Dishes Section -->
+        <section id="special" class="py-16 md:py-24 bg-accent">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-primary">Our Friends' Favorites</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Dish 1 -->
+                    <div class="bg-light p-6 rounded-2xl shadow-lg text-center">
+                        <h3 class="text-2xl font-semibold mb-2 text-secondary">Tushar-e-Paneer</h3>
+                        <p class="text-gray-600 mb-4">(swaggy spice)</p>
+                        <p class="text-lg font-medium text-text">A spicy and flavorful paneer dish that packs a punch with a modern twist.</p>
+                        <span class="text-xl font-bold text-primary mt-4 block">₹380</span>
+                    </div>
+                    <!-- Dish 2 -->
+                    <div class="bg-light p-6 rounded-2xl shadow-lg text-center">
+                        <h3 class="text-2xl font-semibold mb-2 text-secondary">Mauli Murg Masala</h3>
+                        <p class="text-gray-600 mb-4">(desi takda)</p>
+                        <p class="text-lg font-medium text-text">Classic chicken curry made with a rustic, home-style preparation, just like Mauli likes it.</p>
+                        <span class="text-xl font-bold text-primary mt-4 block">₹490</span>
+                    </div>
+                    <!-- Dish 3 -->
+                    <div class="bg-light p-6 rounded-2xl shadow-lg text-center">
+                        <h3 class="text-2xl font-semibold mb-2 text-secondary">Anagha Modak Delight</h3>
+                        <p class="text-gray-600 mb-4">(international touch)</p>
+                        <p class="text-lg font-medium text-text">A unique and delightful twist on the traditional modak, blending Indian sweets with an international flair.</p>
+                        <span class="text-xl font-bold text-primary mt-4 block">₹250</span>
+                    </div>
+                    <!-- Dish 4 -->
+                    <div class="bg-light p-6 rounded-2xl shadow-lg text-center">
+                        <h3 class="text-2xl font-semibold mb-2 text-secondary">Samiksha Chaat-e-Zaika</h3>
+                        <p class="text-gray-600 mb-4">(chatpata slay)</p>
+                        <p class="text-lg font-medium text-text">A vibrant and tangy street food chaat that will tantalize your taste buds with every bite.</p>
+                        <span class="text-xl font-bold text-primary mt-4 block">₹220</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Game Section -->
+        <section id="game" class="py-16 md:py-24 bg-light">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-primary">Guess the Dish!</h2>
+                <div class="bg-white p-8 rounded-2xl shadow-lg max-w-2xl mx-auto text-center">
+                    <p id="game-question" class="text-lg mb-4 text-gray-700">What is a famous dish from Japan?</p>
+                    <input type="text" id="game-answer" placeholder="Type your answer here..." class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary mb-4">
+                    <button id="game-submit" class="w-full bg-secondary hover:bg-primary text-light font-semibold py-3 px-4 rounded-lg transition-colors duration-300">
+                        Submit Answer
+                    </button>
+                    <p id="game-result" class="mt-4 text-lg font-semibold"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feedback & Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-light">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl md:text-5xl font-bold text-center mb-12 text-primary">Get in Touch & Share Your Feedback</h2>
+                <div class="flex flex-col lg:flex-row gap-8 items-center lg:items-start">
+                    
+                    <div class="lg:w-1/2 p-8 bg-white rounded-2xl shadow-lg">
+                        <h3 class="text-2xl font-semibold mb-4 text-secondary">Share Your Feedback</h3>
+                        <form id="feedback-form" action="#" method="POST">
+                            <div class="mb-4">
+                                <label for="feedback-name" class="block text-gray-700 font-medium mb-2">Name</label>
+                                <input type="text" id="feedback-name" name="name" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary">
+                            </div>
+                            <div class="mb-4">
+                                <label for="feedback-email" class="block text-gray-700 font-medium mb-2">Email</label>
+                                <input type="email" id="feedback-email" name="email" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary">
+                            </div>
+                            <div class="mb-4">
+                                <label for="feedback-message" class="block text-gray-700 font-medium mb-2">Your Feedback</label>
+                                <textarea id="feedback-message" name="message" rows="4" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-secondary"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-secondary hover:bg-primary text-light font-semibold py-3 px-4 rounded-lg transition-colors duration-300">
+                                Submit Feedback
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <div class="lg:w-1/2 space-y-6">
+                        <div class="p-6 bg-white rounded-2xl shadow-lg">
+                            <h3 class="text-2xl font-semibold mb-2 text-secondary">Our Address</h3>
+                            <p class="text-gray-600">61, JM Road, Pune, India</p>
+                        </div>
+                        <div class="p-6 bg-white rounded-2xl shadow-lg">
+                            <h3 class="text-2xl font-semibold mb-2 text-secondary">Hours</h3>
+                            <p class="text-gray-600">Monday - Sunday: 11:00 AM - 11:00 PM</p>
+                        </div>
+                        <div class="p-6 bg-white rounded-2xl shadow-lg">
+                            <h3 class="text-2xl font-semibold mb-2 text-secondary">Contact</h3>
+                            <p class="text-gray-600">Phone: <a href="tel:7778948000" class="text-secondary hover:underline">7778948000</a></p>
+                            <p class="text-gray-600">Email: <a href="mailto:contact@rasoighar.com" class="text-secondary hover:underline">contact@rasoighar.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-light py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Rasoi Ghar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Famous Food Game Logic
+        const questions = [
+            { question: "What is a famous dish from Italy?", answer: "Pasta" },
+            { question: "What is a famous dish from Japan?", answer: "Sushi" },
+            { question: "What is a famous dish from Mexico?", answer: "Tacos" },
+            { question: "What is a famous dish from France?", answer: "Croissant" },
+            { question: "What is a famous dish from China?", answer: "Peking Duck" }
+        ];
+
+        let currentQuestion;
+
+        function pickNewQuestion() {
+            const randomIndex = Math.floor(Math.random() * questions.length);
+            currentQuestion = questions[randomIndex];
+            document.getElementById('game-question').textContent = currentQuestion.question;
+            document.getElementById('game-result').textContent = '';
+            document.getElementById('game-answer').value = '';
+        }
+
+        document.getElementById('game-submit').addEventListener('click', () => {
+            const userAnswer = document.getElementById('game-answer').value.trim().toLowerCase();
+            const resultElement = document.getElementById('game-result');
+            if (userAnswer === currentQuestion.answer.toLowerCase()) {
+                resultElement.textContent = `Correct! You've won a 10% discount on your next bill! Show this code: FOODIE10`;
+                resultElement.classList.remove('text-red-500');
+                resultElement.classList.add('text-green-600');
+            } else {
+                resultElement.textContent = `Sorry, that's not it. Try again!`;
+                resultElement.classList.remove('text-green-600');
+                resultElement.classList.add('text-red-500');
+            }
+        });
+
+        // Pick an initial question when the page loads
+        window.onload = pickNewQuestion;
+    </script>
+</body>
+</html>
